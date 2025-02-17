@@ -1,0 +1,19 @@
+ .navbar{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  background-color: aquamarine;
+  
+ }
+.liitems{
+  margin-left: 60%;
+  display: flex;
+  float: right;
+  font-style: normal;
+  list-style: none;
+
+}
+.liitems li{
+  padding-inline: 20px;
+}
