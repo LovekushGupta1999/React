@@ -1,16 +1,26 @@
 import React, { useState } from "react";
 
 const Form=()=>{
-let [FormData, setFormdata]= useState=("")
+let [FormData, setFormdata]= useState=({username:"",email:"",password:""})
 function inpchange(e){
-    console.log(e.target.value)
-    setFormdata(e.target.value)
+    const {name,value}=e.target
+    setFormdata({...FormData,[name]:value})
 }
 
+function finalsubmit(e){
+    e.preventdefault()
+    localstorage.setItem("data",JSON.stringify(formdata))
+    console.log(formdata)
+}
     return(
         <>
-    {FormData}
-    <input type="text" name="" id="" onChange={inpchange} />
+    <form action="" onSubmit={finalsubmit}>
+    <input type="text"  onChange={inpchange} /><br />
+    <input type="text" name="email" onChange={{inpchange}} /><br />
+    <input type="text" name="password" onChange={{inpchange}} /><br />
+
+   <input type="submit" />
+      </form>
     </>
     )
 }
