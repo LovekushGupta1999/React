@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Form=()=>{
@@ -12,19 +12,20 @@ function inpchange(e){
  
 function finalsubmit(e){
     e.preventdefault()
-    localstorage.setItem("data",JSON.stringify(formdata))
-    console.log(formdata)
-    navigator('about')
+    localstorage.setItem("datas",JSON.stringify(formdata))
+    
+    navigator('/about')
 }
+
     return(
-        <>
+       <>
     <form action="" onSubmit={finalsubmit}>
-        name
-    <input type="text"  onChange={inpchange} /><br />
+    name
+    <input type="text" name="username" onChange={inpchange} /><br />
     email
-    <input type="text" name="email" onChange={{inpchange}} /><br />
+    <input type="text" name="email" onChange={inpchange} /><br />
     password
-    <input type="text" name="password" onChange={{inpchange}} /><br />
+    <input type="text" name="password" onChange={inpchange} /><br />
 
    <input type="submit" />
       </form>
