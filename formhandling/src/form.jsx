@@ -3,16 +3,18 @@ import { useNavigate } from "react-router-dom";
 
 const Form=()=>{
 let [FormData, setFormdata]= useState({username:"",email:"",password:""})
+// console.log(FormData)
 function inpchange(e){
     const {name,value}=e.target
     setFormdata({...FormData,[name]:value})
+
 }
 
  let navigator= useNavigate()
  
 function finalsubmit(e){
-    e.preventdefault()
-    localstorage.setItem("datas",JSON.stringify(formdata))
+    e.preventDefault()
+    localStorage.setItem("datas",JSON.stringify(FormData))
     
     navigator('/about')
 }
