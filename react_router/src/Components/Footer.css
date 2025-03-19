@@ -1,0 +1,119 @@
+/* Footer Styles */
+footer {
+    margin-top:20px ;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links, .footer-social, .footer-newsletter {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-links h3, .footer-social h3, .footer-newsletter h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f4a261;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-social li {
+    margin: 10px 0;
+}
+
+.footer-links a, .footer-social a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: #f4a261;
+}
+
+.footer-social ul {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social a {
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer-social .social-icon {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social .facebook:hover {
+    color: #3b5998;
+}
+
+.footer-social .twitter:hover {
+    color: #1da1f2;
+}
+
+.footer-social .instagram:hover {
+    color: #e4405f;
+}
+
+.footer-social .youtube:hover {
+    color: #ff0000;
+}
+
+.footer-newsletter form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.footer-newsletter .subscribe-btn {
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-newsletter .subscribe-btn:hover {
+    background-color: #e07b50;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: #222;
+    padding: 15px;
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
