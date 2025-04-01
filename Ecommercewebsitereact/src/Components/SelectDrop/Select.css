@@ -1,5 +1,5 @@
-.selecrDrop .openSelect{display: block; ;}
-/* .selecrDrop .openSelect .arrow{position: relative;} */
+.selecrDrop .openSelect{display: block; }
+.selecrDrop .openSelect .arrow{position: absolute; right: 0px;}
 .selectDrop{width: 300px; height: auto; background: #fff;position: absolute;top:160%;left:-15px; z-index: 100;
 box-shadow: 0 3px 6px rgb(0 0 0 / 20%); padding: 15px;}
 .searchfeild input{width: 100%; height: 40px; border: 1px solid #bce3c9; outline: none; padding: 0 15px;}
